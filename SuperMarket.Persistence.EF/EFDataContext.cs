@@ -12,5 +12,6 @@ namespace SuperMarket.Persistence.EF
         }
 
         public DbSet<Good> Goods { get; protected set; }
+        public DbSet<GoodCategory> GoodCategories { get; protected set; }
     }
 }

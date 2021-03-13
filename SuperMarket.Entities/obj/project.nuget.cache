@@ -1,8 +1,28 @@
 {
   "version": 2,
-  "dgSpecHash": "Nq1jSkhi2q17x3jU0EbIHRBSvJbNDijbb854f9gAFC9/cO/1c4AHHRK5Q9Tr0ZQtaGFpCP51zLkQcsqvbVif6Q==",
+  "dgSpecHash": "LgcA4Crt2W7CfXm0GQKHW3l2CSSKPKm9T4NJ7oPGI3wP/0dehoEwgSnKLa2Neyp96iw18wIJJCSDRG9wsL3lkQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.13\\microsoft.entityframeworkcore.3.1.13.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.13\\microsoft.entityframeworkcore.abstractions.3.1.13.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.13\\microsoft.entityframeworkcore.analyzers.3.1.13.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.13\\microsoft.extensions.caching.abstractions.3.1.13.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.13\\microsoft.extensions.caching.memory.3.1.13.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.13\\microsoft.extensions.configuration.3.1.13.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.13\\microsoft.extensions.configuration.abstractions.3.1.13.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.13\\microsoft.extensions.configuration.binder.3.1.13.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.13\\microsoft.extensions.dependencyinjection.3.1.13.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.13\\microsoft.extensions.dependencyinjection.abstractions.3.1.13.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.extensions.logging\\3.1.13\\microsoft.extensions.logging.3.1.13.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.13\\microsoft.extensions.logging.abstractions.3.1.13.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.extensions.options\\3.1.13\\microsoft.extensions.options.3.1.13.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.13\\microsoft.extensions.primitives.3.1.13.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\ss\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
   "logs": []
 }

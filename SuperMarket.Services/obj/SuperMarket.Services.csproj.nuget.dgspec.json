@@ -30,7 +30,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj": {
+                "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

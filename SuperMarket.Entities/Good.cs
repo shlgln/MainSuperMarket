@@ -1,8 +1,9 @@
-﻿namespace SuperMarket.Entities
+﻿using SuperMarket.Infrastructure.Domain;
+
+namespace SuperMarket.Entities
 {
-    public class Good
+    public class Good:Entity<int>
     {
-        public int Id { get; set; }
         public string Code { get; set; }
         public string Title { get; set; }
         public int Count { get; set; }

@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="GoodCategories\" />
     <Folder Include="GoodEntries\" />
     <Folder Include="SaleFactors\" />
   </ItemGroup>
