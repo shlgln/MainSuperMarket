@@ -6,8 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="GoodEntries\" />
-    <Folder Include="SaleFactors\" />
+    <Folder Include="SalesFactors\Exceptions\" />
   </ItemGroup>
 
   <ItemGroup>

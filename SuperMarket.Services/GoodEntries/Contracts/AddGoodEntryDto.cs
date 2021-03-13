@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using SuperMarket.Infrastructure.Domain;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace SuperMarket.Entities
+namespace SuperMarket.Services.GoodEntries.Contracts
 {
-    public class GoodEntry: Entity<int>
+    public class AddGoodEntryDto
     {
         public string GoodCode { get; set; }
         public DateTime EntryDate { get; set; }

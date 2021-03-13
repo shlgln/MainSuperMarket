@@ -18,7 +18,22 @@ namespace SuperMarket.Migrations.Migration
                 .WithColumn("Code").AsString(10).NotNullable()
                 .WithColumn("CategoryId").AsInt32().NotNullable()
                 .ForeignKey("FK_Goods_Category", "GoodCategories", "Id")
-                .OnDelete(System.Data.Rule.Cascade);
+                .OnDelete(System.Data.Rule.Cascade)
+                .WithColumn("Price").AsInt32().NotNullable().WithDefaultValue(0)
+                 .WithColumn("Count").AsInt32().NotNullable().WithDefaultValue(0);
+
+            Create.Table("GoodEntries")
+                .WithColumn("Id").AsInt32().Identity().PrimaryKey()
+                .WithColumn("GoodCode").AsString(50).NotNullable()
+                .WithColumn("EntryDate").AsDateTime()
+                .WithColumn("GoodCount").AsInt32().NotNullable();
+
+            Create.Table("SaleFactors")
+                .WithColumn("Id").AsInt32().Identity().PrimaryKey()
+                .WithColumn("GoodCode").AsString(10).NotNullable()
+                .WithColumn("SalesDate").AsDateTime()
+                .WithColumn("GoodCount").AsInt32().NotNullable();
+
 
             /*Create.ForeignKey("FK_Goods_Category")
                 .FromTable("Goods").ForeignColumn("CategoryId")
@@ -30,6 +45,8 @@ namespace SuperMarket.Migrations.Migration
             Delete.ForeignKey("FK_Goods_Category");
             Delete.Table("Goods");
             Delete.Table("GoodCategories");
+            Delete.Table("SaleFactors");
+            Delete.Table("GoodEntries");
         }
     }
 }

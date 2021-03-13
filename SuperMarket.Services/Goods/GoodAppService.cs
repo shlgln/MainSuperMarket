@@ -1,11 +1,10 @@
 ﻿using SuperMarket.Entities;
 using SuperMarket.Infrastructure.Application;
+using SuperMarket.Services.Goods.Contracts;
 using SuperMarket.Services.Goods.Exceptions;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace SuperMarket.Services.Goods.Contracts
+namespace SuperMarket.Services.Goods
 {
     public class GoodAppService : GoodService
     {

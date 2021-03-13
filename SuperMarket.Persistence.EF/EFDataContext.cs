@@ -13,5 +13,7 @@ namespace SuperMarket.Persistence.EF
 
         public DbSet<Good> Goods { get; protected set; }
         public DbSet<GoodCategory> GoodCategories { get; protected set; }
+        public DbSet<GoodEntry> goodEntries { get;  set; }
+        public DbSet<SaleFactors> SaleFactors { get; set; }
     }
 }

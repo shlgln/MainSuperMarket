@@ -1,11 +1,11 @@
 ﻿using SuperMarket.Entities;
 using SuperMarket.Infrastructure.Application;
+using SuperMarket.Services.GoodCategories.Contracts;
 using SuperMarket.Services.GoodCategories.Exceptions;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace SuperMarket.Services.GoodCategories.Contracts
+namespace SuperMarket.Services.GoodCategories
 {
     public class GoodCategoryAppService : GoodCategoryService
     {
