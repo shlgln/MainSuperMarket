@@ -8,9 +8,12 @@
   <ItemGroup>
     <Folder Include="GoodCategories\" />
     <Folder Include="GoodEntries\" />
-    <Folder Include="Goods\Contracts\" />
-    <Folder Include="Goods\Exceptions\" />
     <Folder Include="SaleFactors\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SuperMarket.Entities\SuperMarket.Entities.csproj" />
+    <ProjectReference Include="..\SuperMarket.Infrastructure\SuperMarket.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
