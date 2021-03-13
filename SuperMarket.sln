@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMarket.Infrastructure"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMarket.Persistence.EF", "SuperMarket.Persistence.EF\SuperMarket.Persistence.EF.csproj", "{CE0372DC-8E85-4002-A5D1-625EB4687344}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMarket.Migrations", "SuperMarket.Migrations\SuperMarket.Migrations.csproj", "{AD0281DA-D760-4B82-875F-82458E20FF69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{CE0372DC-8E85-4002-A5D1-625EB4687344}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE0372DC-8E85-4002-A5D1-625EB4687344}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE0372DC-8E85-4002-A5D1-625EB4687344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD0281DA-D760-4B82-875F-82458E20FF69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD0281DA-D760-4B82-875F-82458E20FF69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD0281DA-D760-4B82-875F-82458E20FF69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD0281DA-D760-4B82-875F-82458E20FF69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{834BB0E5-6241-491C-9B20-B7A3794AA349} = {EAE6F31A-0BFC-4F74-A296-2EBB72B3F88B}
 		{2030009B-64EE-490F-AAAA-8F1B357BD3F8} = {EAE6F31A-0BFC-4F74-A296-2EBB72B3F88B}
 		{CE0372DC-8E85-4002-A5D1-625EB4687344} = {EAE6F31A-0BFC-4F74-A296-2EBB72B3F88B}
+		{AD0281DA-D760-4B82-875F-82458E20FF69} = {EAE6F31A-0BFC-4F74-A296-2EBB72B3F88B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2357F4E-87E4-4C8B-AFB1-1B04F31BD71F}
