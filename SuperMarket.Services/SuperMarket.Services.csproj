@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="GoodCategories\" />
+    <Folder Include="GoodEntries\" />
+    <Folder Include="Goods\Contracts\" />
+    <Folder Include="Goods\Exceptions\" />
+    <Folder Include="SaleFactors\" />
+  </ItemGroup>
+
+</Project>
