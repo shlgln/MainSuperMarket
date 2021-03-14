@@ -3,15 +3,16 @@ using SuperMarket.Infrastructure.Application;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SuperMarket.Services.GoodCategories.Contracts
 {
     public interface GoodCategoryRepository: Repository
     {
-        void AddGoodCategory(GoodCategory goodCategory);
-        IList<GetGoodCategoryDto> GetAllGategories();
-        void DeleteGoodCategory(int id);
+        Task AddGoodCategory(GoodCategory goodCategory);
+        Task<IList<GetGoodCategoryDto>> GetAllGategories();
+        Task DeleteGoodCategory(int id);
         bool GoodCaterotyDublicate(string Title);
-        GoodCategory GetCategory(int id);
+        Task<GoodCategory> GetCategory(int id);
     }
 }

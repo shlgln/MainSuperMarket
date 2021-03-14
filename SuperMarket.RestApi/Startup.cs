@@ -1,20 +1,22 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using SuperMarket.Infrastructure.Application;
 using SuperMarket.Persistence.EF;
+using SuperMarket.Persistence.EF.GoodCategories;
+using SuperMarket.Persistence.EF.GoodEntries;
 using SuperMarket.Persistence.EF.Goods;
+using SuperMarket.Persistence.EF.SalesFactors;
+using SuperMarket.Services.GoodCategories;
+using SuperMarket.Services.GoodCategories.Contracts;
+using SuperMarket.Services.GoodEntries;
+using SuperMarket.Services.GoodEntries.Contracts;
 using SuperMarket.Services.Goods;
 using SuperMarket.Services.Goods.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using SuperMarket.Services.SalesFactors;
+using SuperMarket.Services.SalesFactors.Contracts;
 
 namespace SuperMarket.RestApi
 {
@@ -33,8 +35,19 @@ namespace SuperMarket.RestApi
             services.AddControllers();
             services.AddScoped<EFDataContext>();
             services.AddScoped<UnitOfWork, EFUnitOfWork>();
-            services.AddScoped<GoodRepository, EFGoodRepository>();
+
             services.AddScoped<GoodService, GoodAppService>();
+            services.AddScoped<GoodRepository, EFGoodRepository>();
+
+            services.AddScoped<GoodCategoryService, GoodCategoryAppService>();
+            services.AddScoped<GoodCategoryRepository, EFGoodCategoryRepository>();
+
+            services.AddScoped<GoodEntryService, GoodEntryAppService>();
+            services.AddScoped<GoodEntryRepository, EFGoodEntryRepository>();
+
+            services.AddScoped<SaleFactorService, SaleFactorAppService>();
+            services.AddScoped<SaleFactorRepository, EFSaleFactorRepository>();
+
 
             services.AddSwaggerGen();
         }

@@ -3,6 +3,7 @@ using SuperMarket.Infrastructure.Application;
 using SuperMarket.Services.Goods.Contracts;
 using SuperMarket.Services.Goods.Exceptions;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace SuperMarket.Services.Goods
 {
@@ -17,7 +18,7 @@ namespace SuperMarket.Services.Goods
             _unitOfWork = unitOfWork;
         }
 
-        public void AddGood(AddGoodDto dto)
+        public async Task AddGood(AddGoodDto dto)
         {
             if (IsGoodCode(dto.Code))
             {
@@ -33,9 +34,9 @@ namespace SuperMarket.Services.Goods
                 Price = dto.Price
             };
 
-            _repository.AddGood(good);
-
-            _unitOfWork.Complete();
+            await _repository.AddGood(good);
+ 
+            await _unitOfWork.Complete();
 
         }
         public bool IsGoodCode(string code)
@@ -43,14 +44,14 @@ namespace SuperMarket.Services.Goods
             return _repository.IsGoodsExistsByCode(code);
         }
 
-        public Good GetGoodByCode(string code)
+        public async Task<Good> GetGoodByCode(string code)
         {
-            return _repository.GetGoodByCode(code);
+            return await _repository.GetGoodByCode(code);
         }
 
-        public Good GetGoodById(int id)
+        public async Task<Good> GetGoodById(int id)
         {
-            return _repository.GetGoodById(id);
+            return await _repository.GetGoodById(id);
         }
 
         public bool IsGoodsExistsByCode(string code)
@@ -58,14 +59,9 @@ namespace SuperMarket.Services.Goods
             return _repository.IsGoodsExistsByCode(code);
         }
 
-        List<GetGoodDto> GoodService.GetAllGoods()
+        public async Task EditGoodInfo(UpdateGoodDto dto, int id)
         {
-            return _repository.GetAllGoods();
-        }
-
-        public void EditGoodInfo(UpdateGoodDto dto, int id)
-        {
-            var good = GetGoodById(id);
+            var good = await GetGoodById(id);
             if (good == null)
                 throw new GoodNotFoundById();
 
@@ -74,12 +70,17 @@ namespace SuperMarket.Services.Goods
             good.Price = dto.Price;
             good.CategoryId = dto.CategoryId;
 
-            _unitOfWork.Complete();
+            await _unitOfWork.Complete();
         }
 
-        public Good ShowGoodInfo(int id)
+        public async Task<Good> ShowGoodInfo(int id)
         {
-            return _repository.ShowGoodInfo(id);
+            return await  _repository.ShowGoodInfo(id);
+        }
+
+        Task<IList<GetGoodDto>> GoodService.GetAllGoods()
+        {
+            return _repository.GetAllGoods();
         }
     }
 }

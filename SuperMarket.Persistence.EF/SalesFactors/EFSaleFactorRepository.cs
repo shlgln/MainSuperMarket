@@ -3,6 +3,7 @@ using SuperMarket.Entities;
 using SuperMarket.Services.SalesFactors.Contracts;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace SuperMarket.Persistence.EF.SalesFactors
 {
@@ -15,12 +16,12 @@ namespace SuperMarket.Persistence.EF.SalesFactors
             _dataContext = dataContext;
             _set = _dataContext.SaleFactors;
         }
-        public void AddSaleFactor(SaleFactors salesFactors)
+        public async Task AddSaleFactor(SaleFactors salesFactors)
         {
-            _dataContext.Add(salesFactors);
+            await _dataContext.AddAsync(salesFactors);
         }
 
-        public IList<GetSalesFactorDto> GetAllSaleFactors()
+        public async Task<IList<GetSalesFactorDto>> GetAllSaleFactors()
         {
             var query = from s in _dataContext.SaleFactors
                         join g in _dataContext.Goods on s.GoodCode equals g.Code
@@ -32,7 +33,7 @@ namespace SuperMarket.Persistence.EF.SalesFactors
                             GoodCount = s.GoodCount,
                             SaleDate = s.SalesDate
                         };
-            return query.ToList();
+            return await query.ToListAsync();
         }
     }
 }

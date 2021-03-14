@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SuperMarket.RestApi.Controllers
 {
-    [Route("api/sale-factor")]
+    [Route("api/sale-factors")]
     [ApiController]
     public class SaleFactorController : ControllerBase
     {
@@ -19,15 +19,16 @@ namespace SuperMarket.RestApi.Controllers
         }
 
         [HttpPost]
-        public void AddSaleFactor(AddSalesFactorDto dto)
+        public async Task AddSaleFactor(AddSalesFactorDto dto)
         {
-            _service.AddSaleFactor(dto);
+            await _service.AddSaleFactor(dto);
         }
 
         [HttpGet]
-        public IList<GetSalesFactorDto> GetSalesFactors()
+        public async Task<IList<GetSalesFactorDto>>  GetSalesFactors()
         {
-            return _service.GetAllSaleFactors();
+            var salefactors = await _service.GetAllSaleFactors();
+            return salefactors;
         }
     }
 }

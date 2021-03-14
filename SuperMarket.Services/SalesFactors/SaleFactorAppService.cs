@@ -5,6 +5,7 @@ using SuperMarket.Services.SalesFactors.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SuperMarket.Services.SalesFactors
 {
@@ -14,14 +15,15 @@ namespace SuperMarket.Services.SalesFactors
         private readonly UnitOfWork _unitOfWork;
         private readonly GoodRepository _goodRepository;
 
-        public SaleFactorAppService(SaleFactorRepository repository, UnitOfWork unitOfWork)
+        public SaleFactorAppService(SaleFactorRepository repository, UnitOfWork unitOfWork, GoodRepository goodRepository)
         {
             _repository = repository;
             _unitOfWork = unitOfWork;
+            _goodRepository = goodRepository;
         }
-        public void AddSaleFactor(AddSalesFactorDto dto)
+        public async Task AddSaleFactor(AddSalesFactorDto dto)
         {
-            var good = _goodRepository.GetGoodByCode(dto.GoodCode);
+            var good = await _goodRepository.GetGoodByCode(dto.GoodCode);
 
             if (good == null)
                 throw new Exception();
@@ -37,14 +39,14 @@ namespace SuperMarket.Services.SalesFactors
             };
             good.Count -= dto.GoodCount;
 
-            _repository.Add(salesFactor);
+            await _repository.AddSaleFactor(salesFactor);
 
-            _unitOfWork.Complete();
+            await _unitOfWork.Complete();
         }
          
-        public IList<GetSalesFactorDto> GetAllSaleFactors()
+        public async Task<IList<GetSalesFactorDto>> GetAllSaleFactors()
         {
-            return _repository.GetAll();
+            return await _repository.GetAllSaleFactors();
         }
     }
 }

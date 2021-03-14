@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SuperMarket.RestApi.Controllers
 {
-    [Route("api/good-entry")]
+    [Route("api/good-entries")]
     [ApiController]
     public class GoodEntryController : ControllerBase
     {
@@ -19,15 +19,16 @@ namespace SuperMarket.RestApi.Controllers
         }
 
         [HttpPost]
-        public void AddGoodEntry(AddGoodEntryDto dto)
+        public async Task AddGoodEntry(AddGoodEntryDto dto)
         {
-            _service.AddGoodEntry(dto);
+            await _service.AddGoodEntry(dto);
         }
 
         [HttpGet]
-        public IList<GetGoodEntryDto> GetGoodEntries()
+        public async Task<IList<GetGoodEntryDto>> GetGoodEntries()
         {
-            return _service.GetAllGoodEntry();
+            var goodEntries = await _service.GetAllGoodEntry();
+            return goodEntries;
         }
     }
 }

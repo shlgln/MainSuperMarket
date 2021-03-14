@@ -6,6 +6,7 @@ using SuperMarket.Services.Goods.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SuperMarket.Services.GoodEntries
 {
@@ -21,9 +22,9 @@ namespace SuperMarket.Services.GoodEntries
             _unitOfWork = unitOfWork;
             _goodRepository = goodRepository;
         }
-        public void AddGoodEntry(AddGoodEntryDto dto)
+        public async Task AddGoodEntry(AddGoodEntryDto dto)
         {
-            var good = _goodRepository.GetGoodByCode(dto.GoodCode);
+            var good = await _goodRepository.GetGoodByCode(dto.GoodCode);
 
             if (good == null)
                 throw new AddGoodEntryException();
@@ -35,13 +36,13 @@ namespace SuperMarket.Services.GoodEntries
                 GoodCode = dto.GoodCode
             };
             good.Count += dto.GoodCount;
-            _repository.AddGoodEntry(goodEntry);
-            _unitOfWork.Complete();
+           await _repository.AddGoodEntry(goodEntry);
+           await _unitOfWork.Complete();
         }
 
-        public IList<GetGoodEntryDto> GetAllGoodEntry()
+        public async Task<IList<GetGoodEntryDto>> GetAllGoodEntry()
         {
-            return _repository.GetAllGoodEntry();
+            return await _repository.GetAllGoodEntry();
         }
     }
 }

@@ -42,7 +42,7 @@ namespace SuperMarket.Migrations.Migration
 
         public override void Down()
         {
-            Delete.ForeignKey("FK_Goods_Category");
+            //Delete.ForeignKey("FK_Goods_Category");
             Delete.Table("Goods");
             Delete.Table("GoodCategories");
             Delete.Table("SaleFactors");

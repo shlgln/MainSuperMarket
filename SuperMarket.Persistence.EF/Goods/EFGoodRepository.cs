@@ -3,6 +3,7 @@ using SuperMarket.Entities;
 using SuperMarket.Services.Goods.Contracts;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace SuperMarket.Persistence.EF.Goods
 {
@@ -17,14 +18,14 @@ namespace SuperMarket.Persistence.EF.Goods
             _set = _dataContext.Goods;
         }
 
-        public void AddGood(Good good)
+        public async Task AddGood(Good good)
         {
-            _dataContext.Add(good);
+            await _dataContext.AddAsync(good);
         }
 
-        public List<GetGoodDto> GetAllGoods()
+        public async Task<IList<GetGoodDto>> GetAllGoods()
         {
-            return _dataContext.Goods.Select
+            return await  _dataContext.Goods.Select
                 (_ => new GetGoodDto
                 {
                     Code = _.Code,
@@ -32,17 +33,17 @@ namespace SuperMarket.Persistence.EF.Goods
                     Title = _.Title,
                     Status = _.Status,
 
-                }).ToList();
+                }).ToListAsync();
         }
 
-        public Good GetGoodByCode(string code)
+        public async Task<Good> GetGoodByCode(string code)
         {
-            return _dataContext.Goods.Find(code);
+            return await _dataContext.Goods.FindAsync(code);
         }
 
-        public Good GetGoodById(int id)
+        public async Task<Good> GetGoodById(int id)
         {
-            return _dataContext.Goods.Find(id);
+            return await _dataContext.Goods.FindAsync(id);
         }
 
         public bool IsGoodsExistsByCode(string code)
@@ -50,9 +51,9 @@ namespace SuperMarket.Persistence.EF.Goods
             return _dataContext.Goods.Any(_ => _.Code == code);
         }
 
-        public Good ShowGoodInfo(int id)
+        public async Task<Good> ShowGoodInfo(int id)
         {
-            return _dataContext.Goods.Find(id);
+            return await _dataContext.Goods.FindAsync(id);
         }
     }
 }

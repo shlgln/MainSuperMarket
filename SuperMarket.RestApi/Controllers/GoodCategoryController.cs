@@ -19,27 +19,28 @@ namespace SuperMarket.RestApi.Controllers
         }
 
         [HttpPost]
-        public void AddGoodCategory(string title)
+        public async void AddGoodCategory(string title)
         {
-            _service.AddGoodCategory(title);
+            await _service.AddGoodCategory(title);
         }
 
         [HttpGet]
-        public IList<GetGoodCategoryDto> GetAllGategories()
+        public async Task<IList<GetGoodCategoryDto>> GetAllGategories()
         {
-            return _service.GetAllGategories();
+            var goodcategories = await _service.GetAllGategories();
+            return goodcategories;
         }
 
         [HttpDelete]
-        public void DeleteGoodCategory(int id)
+        public async void DeleteGoodCategory(int id)
         {
-            _service.DeleteGoodCategory(id);
+           await _service.DeleteGoodCategory(id);
         }
 
         [HttpPut]
-        public void EditGoodCategoryInfo(int id, UpdateGoodCategoryDto dto)
+        public async void EditGoodCategoryInfo(int id, UpdateGoodCategoryDto dto)
         {
-            _service.UpdateGoodCategory(id, dto);
+            await _service.UpdateGoodCategory(id, dto);
         }
     }
 }

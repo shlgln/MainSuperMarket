@@ -14,3 +14,4 @@ C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\ob
 C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.dll
 C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.pdb
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.csprojAssemblyReference.cache

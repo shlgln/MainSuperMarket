@@ -1,17 +1,18 @@
 ﻿using SuperMarket.Entities;
 using SuperMarket.Infrastructure.Application;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace SuperMarket.Services.Goods.Contracts
 {
     public interface GoodService: Service
     {
-        void AddGood(AddGoodDto dto);
-        List<GetGoodDto> GetAllGoods();
+        Task AddGood(AddGoodDto dto);
+        Task<IList<GetGoodDto>> GetAllGoods();
         bool IsGoodsExistsByCode(string code);
-        Good GetGoodByCode(string code);
-        Good GetGoodById(int id);
-        void EditGoodInfo(UpdateGoodDto dto, int id);
-        Good ShowGoodInfo(int id);
+        Task<Good> GetGoodByCode(string code);
+        Task<Good> GetGoodById(int id);
+        Task EditGoodInfo(UpdateGoodDto dto, int id);
+        Task<Good> ShowGoodInfo(int id);
     }
 }

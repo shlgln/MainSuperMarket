@@ -2,12 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SuperMarket.Services.GoodEntries.Contracts
 {
     public interface GoodEntryService: Service
     {
-        void AddGoodEntry(AddGoodEntryDto dto);
-        IList<GetGoodEntryDto> GetAllGoodEntry();
+        Task AddGoodEntry(AddGoodEntryDto dto);
+        Task<IList<GetGoodEntryDto>> GetAllGoodEntry();
     }
 }

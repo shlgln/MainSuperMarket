@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SuperMarket.Persistence.EF
 {
@@ -33,9 +34,10 @@ namespace SuperMarket.Persistence.EF
             _dataContext.Database.RollbackTransaction();
         }
 
-        public void Complete()
+        public async Task Complete()
         {
-            _dataContext.SaveChanges();
+            await _dataContext.SaveChangesAsync();
         }
+
     }
 }

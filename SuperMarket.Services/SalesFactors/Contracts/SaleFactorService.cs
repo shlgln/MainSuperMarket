@@ -2,13 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SuperMarket.Services.SalesFactors.Contracts
 {
     public interface SaleFactorService: Service
     {
-        public void AddSaleFactor(AddSalesFactorDto dto);
+        Task AddSaleFactor(AddSalesFactorDto dto);
 
-        public IList<GetSalesFactorDto> GetAllSaleFactors();
+        Task<IList<GetSalesFactorDto>> GetAllSaleFactors();
     }
 }

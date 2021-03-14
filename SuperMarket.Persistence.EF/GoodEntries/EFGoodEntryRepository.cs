@@ -3,6 +3,7 @@ using SuperMarket.Entities;
 using SuperMarket.Services.GoodEntries.Contracts;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace SuperMarket.Persistence.EF.GoodEntries
 {
@@ -16,12 +17,12 @@ namespace SuperMarket.Persistence.EF.GoodEntries
             _dataContext = dataContext;
             _set = _dataContext.goodEntries;
         }
-        public void AddGoodEntry(GoodEntry goodEntry)
+        public async Task AddGoodEntry(GoodEntry goodEntry)
         {
-            _dataContext.Add(goodEntry);
+            await _dataContext.AddAsync(goodEntry);
         }
 
-        public IList<GetGoodEntryDto> GetAllGoodEntry()
+        public async Task<IList<GetGoodEntryDto>> GetAllGoodEntry()
         {
             var query = from a in _dataContext.goodEntries
                         join p in _dataContext.Goods on a.GoodCode equals p.Code
@@ -34,7 +35,7 @@ namespace SuperMarket.Persistence.EF.GoodEntries
                             GoodCode = p.Code
                         };
 
-            return query.ToList();
+            return await query.ToListAsync();
         }
     }
 }
