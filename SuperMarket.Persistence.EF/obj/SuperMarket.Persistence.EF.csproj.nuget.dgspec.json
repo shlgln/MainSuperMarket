@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\SuperMarket.Persistence.EF.csproj": {}
+    "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\SuperMarket.Persistence.EF.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj": {
+    "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj",
+        "projectUniqueName": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj",
         "projectName": "SuperMarket.Entities",
-        "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj",
+        "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj",
         "packagesPath": "C:\\Users\\ss\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\obj\\",
+        "outputPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj": {
-                "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj"
+              "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj": {
+                "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj": {
+    "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj",
         "projectName": "SuperMarket.Infrastructure",
-        "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj",
+        "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\ss\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\obj\\",
+        "outputPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -128,14 +128,14 @@
         }
       }
     },
-    "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\SuperMarket.Persistence.EF.csproj": {
+    "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\SuperMarket.Persistence.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\SuperMarket.Persistence.EF.csproj",
+        "projectUniqueName": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\SuperMarket.Persistence.EF.csproj",
         "projectName": "SuperMarket.Persistence.EF",
-        "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\SuperMarket.Persistence.EF.csproj",
+        "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\SuperMarket.Persistence.EF.csproj",
         "packagesPath": "C:\\Users\\ss\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\obj\\",
+        "outputPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -155,11 +155,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj": {
-                "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj"
+              "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj": {
+                "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj"
               },
-              "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj": {
-                "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj"
+              "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj": {
+                "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj"
               }
             }
           }
@@ -202,14 +202,14 @@
         }
       }
     },
-    "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj": {
+    "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj",
+        "projectUniqueName": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj",
         "projectName": "SuperMarket.Services",
-        "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj",
+        "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj",
         "packagesPath": "C:\\Users\\ss\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\obj\\",
+        "outputPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -229,11 +229,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj": {
-                "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj"
+              "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj": {
+                "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj"
               },
-              "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj": {
-                "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj"
+              "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj": {
+                "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj"
               }
             }
           }

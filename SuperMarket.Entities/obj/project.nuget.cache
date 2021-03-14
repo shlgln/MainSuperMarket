@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LgcA4Crt2W7CfXm0GQKHW3l2CSSKPKm9T4NJ7oPGI3wP/0dehoEwgSnKLa2Neyp96iw18wIJJCSDRG9wsL3lkQ==",
+  "dgSpecHash": "3vKyjPKVFy6uTzyrqnEqYHLKKQ5FwHQPpQomzrn5iGzCn7/8/8UGLsmJ0vNPYOF2s7sG7Jkeopb/Cnac7H0FvA==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj",
+  "projectFilePath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ss\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\ss\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

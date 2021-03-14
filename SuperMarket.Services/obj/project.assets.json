@@ -681,11 +681,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj",
+      "projectUniqueName": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj",
       "projectName": "SuperMarket.Services",
-      "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj",
+      "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj",
       "packagesPath": "C:\\Users\\ss\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\obj\\",
+      "outputPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -705,11 +705,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj": {
-              "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj"
+            "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj": {
+              "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj"
             },
-            "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj": {
-              "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj"
+            "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj": {
+              "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj"
             }
           }
         }

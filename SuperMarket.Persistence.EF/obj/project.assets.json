@@ -5662,11 +5662,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\SuperMarket.Persistence.EF.csproj",
+      "projectUniqueName": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\SuperMarket.Persistence.EF.csproj",
       "projectName": "SuperMarket.Persistence.EF",
-      "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\SuperMarket.Persistence.EF.csproj",
+      "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\SuperMarket.Persistence.EF.csproj",
       "packagesPath": "C:\\Users\\ss\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\obj\\",
+      "outputPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Persistence.EF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5686,11 +5686,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj": {
-              "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj"
+            "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj": {
+              "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Entities\\SuperMarket.Entities.csproj"
             },
-            "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj": {
-              "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj"
+            "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj": {
+              "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Services\\SuperMarket.Services.csproj"
             }
           }
         }

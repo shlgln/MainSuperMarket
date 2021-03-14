@@ -1,0 +1,8 @@
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\bin\Debug\netcoreapp3.1\SuperMarket.Infrastructure.deps.json
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\bin\Debug\netcoreapp3.1\SuperMarket.Infrastructure.dll
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\bin\Debug\netcoreapp3.1\SuperMarket.Infrastructure.pdb
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.AssemblyInfoInputs.cache
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.AssemblyInfo.cs
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.dll
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.pdb

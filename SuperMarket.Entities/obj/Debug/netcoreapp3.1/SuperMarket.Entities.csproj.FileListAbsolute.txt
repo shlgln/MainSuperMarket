@@ -1,0 +1,12 @@
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Entities\bin\Debug\netcoreapp3.1\SuperMarket.Entities.deps.json
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Entities\bin\Debug\netcoreapp3.1\SuperMarket.Entities.dll
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Entities\bin\Debug\netcoreapp3.1\SuperMarket.Entities.pdb
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Entities\bin\Debug\netcoreapp3.1\SuperMarket.Infrastructure.dll
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Entities\bin\Debug\netcoreapp3.1\SuperMarket.Infrastructure.pdb
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Entities\obj\Debug\netcoreapp3.1\SuperMarket.Entities.csprojAssemblyReference.cache
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Entities\obj\Debug\netcoreapp3.1\SuperMarket.Entities.AssemblyInfoInputs.cache
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Entities\obj\Debug\netcoreapp3.1\SuperMarket.Entities.AssemblyInfo.cs
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Entities\obj\Debug\netcoreapp3.1\SuperMarket.Entities.csproj.CoreCompileInputs.cache
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Entities\obj\Debug\netcoreapp3.1\SuperMarket.Entities.csproj.CopyComplete
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Entities\obj\Debug\netcoreapp3.1\SuperMarket.Entities.dll
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Entities\obj\Debug\netcoreapp3.1\SuperMarket.Entities.pdb

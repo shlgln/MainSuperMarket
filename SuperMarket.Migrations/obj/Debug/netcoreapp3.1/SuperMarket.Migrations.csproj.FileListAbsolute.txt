@@ -39,7 +39,6 @@ C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\bin\Debug\netco
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
-C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\obj\Debug\netcoreapp3.1\SuperMarket.Migrations.csprojAssemblyReference.cache
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\obj\Debug\netcoreapp3.1\SuperMarket.Migrations.AssemblyInfoInputs.cache
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\obj\Debug\netcoreapp3.1\SuperMarket.Migrations.AssemblyInfo.cs
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\obj\Debug\netcoreapp3.1\SuperMarket.Migrations.csproj.CoreCompileInputs.cache
@@ -47,3 +46,4 @@ C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\obj\Debug\netco
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\obj\Debug\netcoreapp3.1\SuperMarket.Migrations.dll
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\obj\Debug\netcoreapp3.1\SuperMarket.Migrations.pdb
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\obj\Debug\netcoreapp3.1\SuperMarket.Migrations.genruntimeconfig.cache
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\obj\Debug\netcoreapp3.1\SuperMarket.Migrations.csprojAssemblyReference.cache

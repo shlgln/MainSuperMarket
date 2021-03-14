@@ -4,3 +4,13 @@ C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Persistence.EF\bin\Debug\n
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Persistence.EF\obj\Debug\netcoreapp3.1\SuperMarket.Persistence.EF.csprojAssemblyReference.cache
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Persistence.EF\obj\Debug\netcoreapp3.1\SuperMarket.Persistence.EF.AssemblyInfoInputs.cache
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Persistence.EF\obj\Debug\netcoreapp3.1\SuperMarket.Persistence.EF.AssemblyInfo.cs
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Persistence.EF\obj\Debug\netcoreapp3.1\SuperMarket.Persistence.EF.csproj.CoreCompileInputs.cache
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Persistence.EF\bin\Debug\netcoreapp3.1\SuperMarket.Persistence.EF.deps.json
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Persistence.EF\bin\Debug\netcoreapp3.1\SuperMarket.Persistence.EF.dll
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Persistence.EF\bin\Debug\netcoreapp3.1\SuperMarket.Persistence.EF.pdb
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Persistence.EF\bin\Debug\netcoreapp3.1\SuperMarket.Entities.pdb
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Persistence.EF\bin\Debug\netcoreapp3.1\SuperMarket.Services.pdb
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Persistence.EF\bin\Debug\netcoreapp3.1\SuperMarket.Infrastructure.pdb
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Persistence.EF\obj\Debug\netcoreapp3.1\SuperMarket.Persistence.EF.csproj.CopyComplete
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Persistence.EF\obj\Debug\netcoreapp3.1\SuperMarket.Persistence.EF.dll
+C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Persistence.EF\obj\Debug\netcoreapp3.1\SuperMarket.Persistence.EF.pdb

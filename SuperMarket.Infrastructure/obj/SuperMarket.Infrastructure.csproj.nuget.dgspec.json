@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj": {}
+    "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj": {
+    "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj",
         "projectName": "SuperMarket.Infrastructure",
-        "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj",
+        "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\SuperMarket.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\ss\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\obj\\",
+        "outputPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

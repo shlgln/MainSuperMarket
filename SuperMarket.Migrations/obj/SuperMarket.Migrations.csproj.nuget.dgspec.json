@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Migrations\\SuperMarket.Migrations.csproj": {}
+    "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Migrations\\SuperMarket.Migrations.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Migrations\\SuperMarket.Migrations.csproj": {
+    "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Migrations\\SuperMarket.Migrations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Migrations\\SuperMarket.Migrations.csproj",
+        "projectUniqueName": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Migrations\\SuperMarket.Migrations.csproj",
         "projectName": "SuperMarket.Migrations",
-        "projectPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Migrations\\SuperMarket.Migrations.csproj",
+        "projectPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Migrations\\SuperMarket.Migrations.csproj",
         "packagesPath": "C:\\Users\\ss\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Migrations\\obj\\",
+        "outputPath": "C:\\Projects\\Projects\\SuperMarketLayers\\SuperMarket\\SuperMarket.Migrations\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

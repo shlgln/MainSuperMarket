@@ -35,5 +35,6 @@ namespace SuperMarket.Persistence.EF.GoodEntries
                         };
 
             return query.ToList();
+        }
     }
 }
