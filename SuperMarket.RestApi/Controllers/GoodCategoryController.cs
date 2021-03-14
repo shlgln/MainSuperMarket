@@ -30,5 +30,10 @@ namespace SuperMarket.RestApi.Controllers
             return _service.GetAllGategories();
         }
 
+        [HttpDelete]
+        public void DeleteGoodCategory(int id)
+        {
+            _service.DeleteGoodCategory(id);
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace SuperMarket.Persistence.EF.GoodCategoies
             builder.HasMany(_ => _.Goods)
                 .WithOne(_ => _.Category)
                 .HasForeignKey(_ => _.CategoryId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }
