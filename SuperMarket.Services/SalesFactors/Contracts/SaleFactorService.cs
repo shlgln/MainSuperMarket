@@ -7,8 +7,8 @@ namespace SuperMarket.Services.SalesFactors.Contracts
 {
     public interface SaleFactorService: Service
     {
-        public void Add(AddSalesFactorDto dto);
+        public void AddSaleFactor(AddSalesFactorDto dto);
 
-        public IList<GetSalesFactorDto> GetAll();
+        public IList<GetSalesFactorDto> GetAllSaleFactors();
     }
 }

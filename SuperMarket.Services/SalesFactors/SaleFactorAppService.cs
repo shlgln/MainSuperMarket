@@ -19,7 +19,7 @@ namespace SuperMarket.Services.SalesFactors
             _repository = repository;
             _unitOfWork = unitOfWork;
         }
-        public void Add(AddSalesFactorDto dto)
+        public void AddSaleFactor(AddSalesFactorDto dto)
         {
             var good = _goodRepository.GetGoodByCode(dto.GoodCode);
 
@@ -42,7 +42,7 @@ namespace SuperMarket.Services.SalesFactors
             _unitOfWork.Complete();
         }
          
-        public IList<GetSalesFactorDto> GetAll()
+        public IList<GetSalesFactorDto> GetAllSaleFactors()
         {
             return _repository.GetAll();
         }

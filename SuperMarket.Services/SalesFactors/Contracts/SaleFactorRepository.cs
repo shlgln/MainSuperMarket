@@ -8,8 +8,8 @@ namespace SuperMarket.Services.SalesFactors.Contracts
 {
     public interface SaleFactorRepository: Repository
     {
-        public void Add(SaleFactors salesFactors);
+        public void AddSaleFactor(SaleFactors salesFactors);
 
-        public IList<GetSalesFactorDto> GetAll();
+        public IList<GetSalesFactorDto> GetAllSaleFactors();
     }
 }

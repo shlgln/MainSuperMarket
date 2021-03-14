@@ -18,6 +18,10 @@ namespace SuperMarket.RestApi.Controllers
             _service = service;
         }
 
-
+        [HttpPost]
+        public void AddSaleFactor(AddSalesFactorDto dto)
+        {
+            _service.AddSaleFactor(dto);
+        }
     }
 }

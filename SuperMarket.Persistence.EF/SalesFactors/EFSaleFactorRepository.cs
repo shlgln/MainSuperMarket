@@ -15,12 +15,12 @@ namespace SuperMarket.Persistence.EF.SalesFactors
             _dataContext = dataContext;
             _set = _dataContext.SaleFactors;
         }
-        public void Add(SaleFactors salesFactors)
+        public void AddSaleFactor(SaleFactors salesFactors)
         {
             _dataContext.Add(salesFactors);
         }
 
-        public IList<GetSalesFactorDto> GetAll()
+        public IList<GetSalesFactorDto> GetAllSaleFactors()
         {
             var query = from s in _dataContext.SaleFactors
                         join g in _dataContext.Goods on s.GoodCode equals g.Code
