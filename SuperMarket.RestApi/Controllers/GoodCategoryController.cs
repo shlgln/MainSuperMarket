@@ -35,5 +35,11 @@ namespace SuperMarket.RestApi.Controllers
         {
             _service.DeleteGoodCategory(id);
         }
+
+        [HttpPut]
+        public void EditGoodCategoryInfo(int id, UpdateGoodCategoryDto dto)
+        {
+            _service.UpdateGoodCategory(id, dto);
+        }
     }
 }
