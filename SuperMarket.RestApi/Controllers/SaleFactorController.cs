@@ -23,5 +23,11 @@ namespace SuperMarket.RestApi.Controllers
         {
             _service.AddSaleFactor(dto);
         }
+
+        [HttpGet]
+        public IList<GetSalesFactorDto> GetSalesFactors()
+        {
+            return _service.GetAllSaleFactors();
+        }
     }
 }
