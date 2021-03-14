@@ -18,5 +18,11 @@ namespace SuperMarket.RestApi.Controllers
             _service = service;
         }
 
+        [HttpPost]
+        public void AddGoodEntry(AddGoodEntryDto dto)
+        {
+            _service.AddGoodEntry(dto);
+        }
+
     }
 }
