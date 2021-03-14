@@ -17,10 +17,17 @@ namespace SuperMarket.RestApi.Controllers
         {
             _service = service;
         }
+
         [HttpPost]
         public void AddGoodCategory(string title)
         {
             _service.AddGoodCategory(title);
+        }
+
+        [HttpGet]
+        public IList<GetGoodCategoryDto> GetAllGategories()
+        {
+            return _service.GetAllGategories();
         }
 
     }
