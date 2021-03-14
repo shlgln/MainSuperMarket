@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SuperMarket.Entities;
 using SuperMarket.Services.Goods.Contracts;
 using System;
 using System.Collections.Generic;
@@ -29,6 +30,18 @@ namespace SuperMarket.RestApi.Controllers
         public IList<GetGoodDto> Get()
         {
             return _service.GetAllGoods();
+        }
+
+        [HttpGet("{id}")]
+        public Good GetGoodInfoById(int id)
+        {
+            return _service.ShowGoodInfo(id);
+        }
+
+        [HttpPut]
+        public void Edit(UpdateGoodDto dto, int id)
+        {
+            _service.EditGoodInfo(dto, id);
         }
     }
 

@@ -42,7 +42,7 @@ namespace SuperMarket.Services.Goods
         {
             return _repository.IsGoodsExistsByCode(code);
         }
-    
+
         public Good GetGoodByCode(string code)
         {
             return _repository.GetGoodByCode(code);
@@ -61,6 +61,25 @@ namespace SuperMarket.Services.Goods
         List<GetGoodDto> GoodService.GetAllGoods()
         {
             return _repository.GetAllGoods();
+        }
+
+        public void EditGoodInfo(UpdateGoodDto dto, int id)
+        {
+            var good = GetGoodById(id);
+            if (good == null)
+                throw new GoodNotFoundById();
+
+            good.Title = dto.Title;
+            good.Count = dto.Count;
+            good.Price = dto.Price;
+            good.CategoryId = dto.CategoryId;
+
+            _unitOfWork.Complete();
+        }
+
+        public Good ShowGoodInfo(int id)
+        {
+            return _repository.ShowGoodInfo(id);
         }
     }
 }

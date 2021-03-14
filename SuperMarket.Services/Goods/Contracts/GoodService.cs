@@ -11,5 +11,7 @@ namespace SuperMarket.Services.Goods.Contracts
         bool IsGoodsExistsByCode(string code);
         Good GetGoodByCode(string code);
         Good GetGoodById(int id);
+        void EditGoodInfo(UpdateGoodDto dto, int id);
+        Good ShowGoodInfo(int id);
     }
 }

@@ -49,5 +49,10 @@ namespace SuperMarket.Persistence.EF.Goods
         {
             return _dataContext.Goods.Any(_ => _.Code == code);
         }
+
+        public Good ShowGoodInfo(int id)
+        {
+            return _dataContext.Goods.Find(id);
+        }
     }
 }

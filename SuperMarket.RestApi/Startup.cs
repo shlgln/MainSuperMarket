@@ -35,6 +35,8 @@ namespace SuperMarket.RestApi
             services.AddScoped<UnitOfWork, EFUnitOfWork>();
             services.AddScoped<GoodRepository, EFGoodRepository>();
             services.AddScoped<GoodService, GoodAppService>();
+
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +48,14 @@ namespace SuperMarket.RestApi
             }
 
             app.UseHttpsRedirection();
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
+
 
             app.UseRouting();
 

@@ -6,3 +6,12 @@ C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\n
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.dll
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.pdb
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\bin\Debug\netcoreapp3.1\SuperMarket.Infrastructure.deps.json
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\bin\Debug\netcoreapp3.1\SuperMarket.Infrastructure.dll
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\bin\Debug\netcoreapp3.1\SuperMarket.Infrastructure.pdb
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.AssemblyInfoInputs.cache
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.AssemblyInfo.cs
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.dll
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.pdb
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Infrastructure\obj\Debug\netcoreapp3.1\SuperMarket.Infrastructure.csprojAssemblyReference.cache

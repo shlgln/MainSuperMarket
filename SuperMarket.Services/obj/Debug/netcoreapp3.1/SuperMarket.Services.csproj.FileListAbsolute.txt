@@ -12,3 +12,17 @@ C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\bin\Debug\netcore
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\obj\Debug\netcoreapp3.1\SuperMarket.Services.csproj.CopyComplete
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\obj\Debug\netcoreapp3.1\SuperMarket.Services.dll
 C:\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\obj\Debug\netcoreapp3.1\SuperMarket.Services.pdb
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\bin\Debug\netcoreapp3.1\SuperMarket.Services.deps.json
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\bin\Debug\netcoreapp3.1\SuperMarket.Services.dll
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\bin\Debug\netcoreapp3.1\SuperMarket.Services.pdb
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\bin\Debug\netcoreapp3.1\SuperMarket.Entities.dll
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\bin\Debug\netcoreapp3.1\SuperMarket.Infrastructure.dll
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\bin\Debug\netcoreapp3.1\SuperMarket.Entities.pdb
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\bin\Debug\netcoreapp3.1\SuperMarket.Infrastructure.pdb
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\obj\Debug\netcoreapp3.1\SuperMarket.Services.csprojAssemblyReference.cache
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\obj\Debug\netcoreapp3.1\SuperMarket.Services.AssemblyInfoInputs.cache
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\obj\Debug\netcoreapp3.1\SuperMarket.Services.AssemblyInfo.cs
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\obj\Debug\netcoreapp3.1\SuperMarket.Services.csproj.CoreCompileInputs.cache
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\obj\Debug\netcoreapp3.1\SuperMarket.Services.csproj.CopyComplete
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\obj\Debug\netcoreapp3.1\SuperMarket.Services.dll
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Services\obj\Debug\netcoreapp3.1\SuperMarket.Services.pdb
