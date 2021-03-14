@@ -24,5 +24,10 @@ namespace SuperMarket.RestApi.Controllers
             _service.AddGoodEntry(dto);
         }
 
+        [HttpGet]
+        public IList<GetGoodEntryDto> GetGoodEntries()
+        {
+            return _service.GetAllGoodEntry();
+        }
     }
 }
