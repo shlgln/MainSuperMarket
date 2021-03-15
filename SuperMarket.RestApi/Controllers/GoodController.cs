@@ -21,13 +21,13 @@ namespace SuperMarket.RestApi.Controllers
         }
 
         [HttpPost]
-        public async Task Add(AddGoodDto dto)
+        public int Add(AddGoodDto dto)
         {
-            await _service.AddGood(dto);
+            return _service.AddGood(dto);
         }
 
         [HttpGet]
-        public async Task<IList<GetGoodDto>> Get()
+        public async Task<IList<Good>> Get()
         {
             var goods = await _service.GetAllGoods();
             return goods;
@@ -36,7 +36,7 @@ namespace SuperMarket.RestApi.Controllers
         [HttpGet("{id}")]
         public Task<Good> GetGoodInfoById(int id)
         {
-            var good =  _service.ShowGoodInfo(id);
+            var good = _service.ShowGoodInfo(id);
             return good;
         }
 
@@ -49,7 +49,7 @@ namespace SuperMarket.RestApi.Controllers
         [HttpPut]
         public async Task Edit(UpdateGoodDto dto, int id)
         {
-             await _service.EditGoodInfo(dto, id);
+            await _service.EditGoodInfo(dto, id);
         }
     }
 

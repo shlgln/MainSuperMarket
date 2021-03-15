@@ -1,7 +1,7 @@
 ﻿using FluentMigrator;
 using System;
 
-namespace SuperMarket.Migrations.Migration
+namespace SuperMarket.Migrations.Migrations
 {
     [Migration(202103131430)]
     public class _202103131430_InitialMigration : FluentMigrator.Migration
@@ -20,7 +20,7 @@ namespace SuperMarket.Migrations.Migration
                 .ForeignKey("FK_Goods_Category", "GoodCategories", "Id")
                 .OnDelete(System.Data.Rule.Cascade)
                 .WithColumn("Price").AsInt32().NotNullable().WithDefaultValue(0)
-                 .WithColumn("Count").AsInt32().NotNullable().WithDefaultValue(0);
+                 .WithColumn("MinimumStack").AsInt32().NotNullable().WithDefaultValue(0);
 
             Create.Table("GoodEntries")
                 .WithColumn("Id").AsInt32().Identity().PrimaryKey()

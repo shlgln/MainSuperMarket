@@ -11,5 +11,7 @@ namespace SuperMarket.Services.Goods.Contracts
         public string Title { get; set; }
         public int CategoryId { get; set; }
         public int Price { get; set; }
+        public int WareHouseId { get; set; }
+        public int MinimumStack { get; set; }
     }
 }

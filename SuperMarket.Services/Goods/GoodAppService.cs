@@ -18,7 +18,7 @@ namespace SuperMarket.Services.Goods
             _unitOfWork = unitOfWork;
         }
 
-        public async Task AddGood(AddGoodDto dto)
+        public  int AddGood(AddGoodDto dto)
         {
             if (IsGoodCode(dto.Code))
             {
@@ -29,7 +29,8 @@ namespace SuperMarket.Services.Goods
             {
                 Title = dto.Title,
                 Code = dto.Code,
-                Count = 0,
+                MinimumStack = dto.MinimumStack,
+                WareHouseId = dto.WareHouseId,
                 CategoryId = dto.CategoryId,
                 Price = dto.Price
             };
@@ -37,6 +38,7 @@ namespace SuperMarket.Services.Goods
              _repository.AddGood(good);
  
             _unitOfWork.Complete();
+            return good.Id;
 
         }
         public bool IsGoodCode(string code)
@@ -66,7 +68,8 @@ namespace SuperMarket.Services.Goods
                 throw new GoodNotFoundById();
 
             good.Title = dto.Title;
-            good.Count = dto.Count;
+            good.WareHouseId = dto.WareHouseId;
+            good.MinimumStack = dto.MinimumStack;
             good.Price = dto.Price;
             good.CategoryId = dto.CategoryId;
 
@@ -78,9 +81,9 @@ namespace SuperMarket.Services.Goods
             return await  _repository.ShowGoodInfo(id);
         }
 
-        Task<IList<GetGoodDto>> GoodService.GetAllGoods()
+        async Task<IList<Good>> GoodService.GetAllGoods()
         {
-            return _repository.GetAllGoods();
+            return await _repository.GetAllGoods();
         }
     }
 }

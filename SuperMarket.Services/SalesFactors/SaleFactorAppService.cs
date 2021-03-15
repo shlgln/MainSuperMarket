@@ -28,7 +28,7 @@ namespace SuperMarket.Services.SalesFactors
             if (good == null)
                 throw new Exception();
 
-            if (good.Count < dto.GoodCount)
+            if (good.MinimumStack < dto.GoodCount)
                 throw new Exception();
 
             var salesFactor = new SaleFactors
@@ -37,7 +37,7 @@ namespace SuperMarket.Services.SalesFactors
                 SalesDate = DateTime.Now,
                 GoodCode = dto.GoodCode
             };
-            good.Count -= dto.GoodCount;
+            good.MinimumStack -= dto.GoodCount;
 
              _repository.AddSaleFactor(salesFactor);
 

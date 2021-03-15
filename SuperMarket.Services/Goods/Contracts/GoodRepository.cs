@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace SuperMarket.Services.Goods.Contracts
 {
-    public interface GoodRepository:Repository
+    public interface GoodRepository
     {
         void AddGood(Good good);
-        Task<IList<GetGoodDto>> GetAllGoods();
+        Task<IList<Good>> GetAllGoods();
         bool IsGoodsExistsByCode(string code);
         Task<Good> GetGoodByCode(string code);
         Task<Good> GetGoodById(int id);

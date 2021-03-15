@@ -95,3 +95,4 @@ C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\obj\De
 C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\obj\Debug\netcoreapp3.1\SuperMarket.Migrations.dll
 C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\obj\Debug\netcoreapp3.1\SuperMarket.Migrations.pdb
 C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\obj\Debug\netcoreapp3.1\SuperMarket.Migrations.genruntimeconfig.cache
+C:\Projects\Projects\SuperMarketLayers\SuperMarket\SuperMarket.Migrations\obj\Debug\netcoreapp3.1\SuperMarket.Migrations.csprojAssemblyReference.cache

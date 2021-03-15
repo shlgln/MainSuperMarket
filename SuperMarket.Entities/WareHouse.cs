@@ -7,9 +7,8 @@ namespace SuperMarket.Entities
 {
     public class WareHouse: Entity<int>
     {
-        public int GoodId { get; set; }
+        public string Name { get; set; }
         public int GoodCount { get; set; }
-
-        public List<Good> goods { get; set; }
+        public List<Good> Goods { get; set; }
     }
 }

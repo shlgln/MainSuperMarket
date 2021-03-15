@@ -36,7 +36,7 @@ namespace SuperMarket.Persistence.EF
 
         public void Complete()
         {
-             _dataContext.SaveChangesAsync();
+             _dataContext.SaveChanges();
         }
 
     }

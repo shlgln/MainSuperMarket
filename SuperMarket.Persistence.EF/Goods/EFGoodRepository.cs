@@ -29,7 +29,6 @@ namespace SuperMarket.Persistence.EF.Goods
                     Code = _.Code,
                     CategoryId = _.CategoryId,
                     Title = _.Title,
-                    Status = _.Status,
 
                 }).ToListAsync();
         }
@@ -53,5 +52,11 @@ namespace SuperMarket.Persistence.EF.Goods
         {
             return await _dataContext.Goods.FindAsync(id);
         }
+
+        Task<IList<Good>> GoodRepository.GetAllGoods()
+        {
+            throw new System.NotImplementedException();
+        }
+
     }
 }

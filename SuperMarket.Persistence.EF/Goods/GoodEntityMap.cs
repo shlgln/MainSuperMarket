@@ -15,9 +15,24 @@ namespace SuperMarket.Persistence.EF.Goods
 
             builder.Property(_ => _.Id).ValueGeneratedOnAdd();
 
+            builder.Property(_ => _.Title).HasMaxLength(50).IsRequired();
+
+            builder.Property(_ => _.MinimumStack).IsRequired();
+
+            builder.Property(_ => _.WareHouseId).IsRequired();
+
+            builder.Property(_ => _.CategoryId).IsRequired();
+
+            builder.Property(_ => _.Price).IsRequired();
+
+
             builder.HasOne(_ => _.Category)
                 .WithMany(_ => _.Goods)
                 .HasForeignKey(_ => _.CategoryId);
+
+            builder.HasOne(_ => _.WareHouse)
+                .WithMany(_ => _.Goods)
+                .HasForeignKey(_ => _.WareHouse);
         }
     }
 }

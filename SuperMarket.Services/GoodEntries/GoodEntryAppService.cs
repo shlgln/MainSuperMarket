@@ -35,7 +35,7 @@ namespace SuperMarket.Services.GoodEntries
                 EntryDate = DateTime.Now,
                 GoodCode = dto.GoodCode
             };
-            good.Count += dto.GoodCount;
+            good.MinimumStack += dto.GoodCount;
             _repository.AddGoodEntry(goodEntry);
             _unitOfWork.Complete();
         }

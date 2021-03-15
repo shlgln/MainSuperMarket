@@ -7,8 +7,8 @@ namespace SuperMarket.Services.Goods.Contracts
 {
     public interface GoodService
     {
-        Task AddGood(AddGoodDto dto);
-        Task<IList<GetGoodDto>> GetAllGoods();
+        int AddGood(AddGoodDto dto);
+        Task<IList<Good>> GetAllGoods();
         bool IsGoodsExistsByCode(string code);
         Task<Good> GetGoodByCode(string code);
         Task<Good> GetGoodById(int id);
