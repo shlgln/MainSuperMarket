@@ -23,14 +23,15 @@ namespace SuperMarket.Persistence.EF.GoodEntries
         public async Task<IList<GetGoodEntryDto>> GetAllGoodEntry()
         {
             var query = from a in _dataContext.goodEntries
-                        join p in _dataContext.Goods on a.GoodCode equals p.Code
+                        join p in _dataContext.Goods on a.GoodId equals p.Id
                         join c in _dataContext.GoodCategories on p.CategoryId equals c.Id
                         select new GetGoodEntryDto
                         {
                             Id = a.Id,
                             GoodTitle = p.Title,
                             CategoryTitle = c.Title,
-                            GoodCode = p.Code
+                            GoodId = p.Id,
+                            TotalAmount = p.Price * a.GoodCount
                         };
 
             return await query.ToListAsync();

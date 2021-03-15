@@ -22,14 +22,15 @@ namespace SuperMarket.Persistence.EF.SalesFactors
         public async Task<IList<GetSalesFactorDto>> GetAllSaleFactors()
         {
             var query = from s in _dataContext.SaleFactors
-                        join g in _dataContext.Goods on s.GoodCode equals g.Code
+                        join g in _dataContext.Goods on s.GoodId equals g.Id
                         select new GetSalesFactorDto
                         {
                             Id = s.Id,
                             Title = g.Title,
-                            GoodCode = s.GoodCode,
+                            GoodId = s.Id,
                             GoodCount = s.GoodCount,
-                            SaleDate = s.SalesDate
+                            SaleDate = s.SalesDate,
+                            TotalAmount = s.GoodCount * g.Price
                         };
             return await query.ToListAsync();
         }

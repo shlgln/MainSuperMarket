@@ -9,7 +9,7 @@ namespace SuperMarket.Entities
         public int MinimumStack { get; set; }
         public int CategoryId { get; set; }
         public int WareHouseId { get; set; }
-        public int Price { get; set; }
+        public decimal Price { get; set; }
         public GoodCategory Category { get; set; }
         public WareHouse WareHouse { get; set; }
     }

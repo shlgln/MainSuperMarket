@@ -7,7 +7,7 @@ namespace SuperMarket.Services.SalesFactors.Contracts
 {
     public class AddSalesFactorDto
     {
-        public string GoodCode { get; set; }
+        public int GoodId { get; set; }
         public DateTime SaleDate { get; set; }
         public int GoodCount { get; set; }
     }

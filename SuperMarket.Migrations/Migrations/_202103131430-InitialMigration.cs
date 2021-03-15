@@ -19,18 +19,18 @@ namespace SuperMarket.Migrations.Migrations
                 .WithColumn("CategoryId").AsInt32().NotNullable()
                 .ForeignKey("FK_Goods_Category", "GoodCategories", "Id")
                 .OnDelete(System.Data.Rule.Cascade)
-                .WithColumn("Price").AsInt32().NotNullable().WithDefaultValue(0)
-                 .WithColumn("MinimumStack").AsInt32().NotNullable().WithDefaultValue(0);
+                .WithColumn("Price").AsInt32().NotNullable()
+                .WithColumn("MinimumStack").AsInt32().NotNullable();
 
             Create.Table("GoodEntries")
                 .WithColumn("Id").AsInt32().Identity().PrimaryKey()
-                .WithColumn("GoodCode").AsString(50).NotNullable()
+                .WithColumn("GoodId").AsInt32().NotNullable()
                 .WithColumn("EntryDate").AsDateTime()
                 .WithColumn("GoodCount").AsInt32().NotNullable();
 
             Create.Table("SaleFactors")
                 .WithColumn("Id").AsInt32().Identity().PrimaryKey()
-                .WithColumn("GoodCode").AsString(10).NotNullable()
+                .WithColumn("GoodId").AsInt32().NotNullable()
                 .WithColumn("SalesDate").AsDateTime()
                 .WithColumn("GoodCount").AsInt32().NotNullable();
 

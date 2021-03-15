@@ -24,7 +24,7 @@ namespace SuperMarket.Services.GoodEntries
         }
         public async Task AddGoodEntry(AddGoodEntryDto dto)
         {
-            var good = await _goodRepository.GetGoodByCode(dto.GoodCode);
+            var good = await _goodRepository.GetGoodById(dto.GoodId);
 
             if (good == null)
                 throw new AddGoodEntryException();
@@ -33,7 +33,7 @@ namespace SuperMarket.Services.GoodEntries
             {
                 GoodCount = dto.GoodCount,
                 EntryDate = DateTime.Now,
-                GoodCode = dto.GoodCode
+                GoodId = dto.GoodId
             };
             good.MinimumStack += dto.GoodCount;
             _repository.AddGoodEntry(goodEntry);

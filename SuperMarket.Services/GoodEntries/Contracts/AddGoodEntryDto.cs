@@ -7,7 +7,7 @@ namespace SuperMarket.Services.GoodEntries.Contracts
 {
     public class AddGoodEntryDto
     {
-        public string GoodCode { get; set; }
+        public int GoodId { get; set; }
         public DateTime EntryDate { get; set; }
         public int GoodCount { get; set; }
     }

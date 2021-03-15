@@ -26,6 +26,7 @@ namespace SuperMarket.Persistence.EF.Goods
             builder.Property(_ => _.Price).IsRequired();
 
 
+
             builder.HasOne(_ => _.Category)
                 .WithMany(_ => _.Goods)
                 .HasForeignKey(_ => _.CategoryId);

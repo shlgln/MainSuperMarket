@@ -7,7 +7,7 @@ namespace SuperMarket.Entities
 {
     public class SaleFactors: Entity<int>
     {
-        public string GoodCode { get; set; }
+        public int GoodId { get; set; }
         public DateTime SalesDate { get; set; }
         public int GoodCount { get; set; }
     }

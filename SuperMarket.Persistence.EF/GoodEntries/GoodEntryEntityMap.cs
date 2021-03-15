@@ -15,8 +15,7 @@ namespace SuperMarket.Persistence.EF.GoodEntries
             builder.Property(_ => _.Id)
                 .ValueGeneratedOnAdd();
 
-            builder.Property(_ => _.GoodCode)
-                .HasMaxLength(10).IsRequired();
+            builder.Property(_ => _.GoodId).IsRequired();
 
             builder.Property(_ => _.GoodCount).IsRequired();
 

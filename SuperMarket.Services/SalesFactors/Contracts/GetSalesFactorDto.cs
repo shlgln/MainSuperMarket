@@ -9,8 +9,9 @@ namespace SuperMarket.Services.SalesFactors.Contracts
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public string GoodCode { get; set; }
+        public int GoodId { get; set; }
         public int GoodCount { get; set; }
+        public decimal TotalAmount { get; set; }
         public DateTime SaleDate { get; set; }
     }
 }

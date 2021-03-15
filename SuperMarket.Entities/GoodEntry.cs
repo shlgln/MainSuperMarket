@@ -7,7 +7,7 @@ namespace SuperMarket.Entities
 {
     public class GoodEntry: Entity<int>
     {
-        public string GoodCode { get; set; }
+        public int GoodId { get; set; }
         public DateTime EntryDate { get; set; }
         public int GoodCount { get; set; }
     }

@@ -10,8 +10,9 @@ namespace SuperMarket.Services.GoodEntries.Contracts
         public int Id { get; set; }
         public string GoodTitle { get; set; }
         public string CategoryTitle { get; set; }
-        public string GoodCode { get; set; }
+        public int GoodId { get; set; }
         public DateTime EntryDate { get; set; }
+        public decimal TotalAmount { get; set; }
         public int GoodCount { get; set; }
     }
 }

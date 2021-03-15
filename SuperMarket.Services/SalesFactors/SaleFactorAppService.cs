@@ -2,6 +2,7 @@
 using SuperMarket.Infrastructure.Application;
 using SuperMarket.Services.Goods.Contracts;
 using SuperMarket.Services.SalesFactors.Contracts;
+using SuperMarket.Services.SalesFactors.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -23,19 +24,19 @@ namespace SuperMarket.Services.SalesFactors
         }
         public async Task AddSaleFactor(AddSalesFactorDto dto)
         {
-            var good = await _goodRepository.GetGoodByCode(dto.GoodCode);
+            var good = await _goodRepository.GetGoodById(dto.GoodId);
 
             if (good == null)
                 throw new Exception();
 
             if (good.MinimumStack < dto.GoodCount)
-                throw new Exception();
+                throw new GoodCountLessThanSaleCount();
 
             var salesFactor = new SaleFactors
             {
                 GoodCount = dto.GoodCount,
                 SalesDate = DateTime.Now,
-                GoodCode = dto.GoodCode
+                GoodId = dto.GoodId
             };
             good.MinimumStack -= dto.GoodCount;
 
