@@ -31,8 +31,8 @@ namespace SuperMarket.Services.GoodCategories
                 Title = Title
             };
 
-            await _repository.AddGoodCategory(goodCategory);
-            await _unitOfWork.Complete();
+             _repository.AddGoodCategory(goodCategory);
+             _unitOfWork.Complete();
         }
         private bool GoodCaterotyDublicate(string Title)
         {
@@ -41,12 +41,12 @@ namespace SuperMarket.Services.GoodCategories
 
         public async Task DeleteGoodCategory(int id)
         {
-            var goodCategory = GetCategory(id);
+            var goodCategory = await GetCategory(id);
             if (goodCategory == null)
                 throw new Exception();
 
-            await _repository.DeleteGoodCategory(id);
-            await _unitOfWork.Complete();
+            _repository.DeleteGoodCategory(goodCategory);
+             _unitOfWork.Complete();
         }
 
         public async Task<IList<GetGoodCategoryDto>> GetAllGategories()
@@ -62,7 +62,7 @@ namespace SuperMarket.Services.GoodCategories
 
             category.Title = dto.Title;
 
-           await _unitOfWork.Complete();
+            _unitOfWork.Complete();
         }
         private async Task<GoodCategory> GetCategory(int id)
         {

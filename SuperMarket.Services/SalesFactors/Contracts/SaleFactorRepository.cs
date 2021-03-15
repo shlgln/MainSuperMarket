@@ -9,7 +9,7 @@ namespace SuperMarket.Services.SalesFactors.Contracts
 {
     public interface SaleFactorRepository: Repository
     {
-        Task AddSaleFactor(SaleFactors salesFactors);
+        void AddSaleFactor(SaleFactors salesFactors);
 
         Task<IList<GetSalesFactorDto>> GetAllSaleFactors();
     }

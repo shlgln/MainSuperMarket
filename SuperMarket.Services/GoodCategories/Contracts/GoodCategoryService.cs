@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SuperMarket.Services.GoodCategories.Contracts
 {
-    public interface GoodCategoryService: Service
+    public interface GoodCategoryService
     {
         Task AddGoodCategory(string Title);
         Task<IList<GetGoodCategoryDto>> GetAllGategories();

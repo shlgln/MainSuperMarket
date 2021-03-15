@@ -10,16 +10,14 @@ namespace SuperMarket.Persistence.EF.GoodEntries
     public class EFGoodEntryRepository : GoodEntryRepository
     {
         private readonly EFDataContext _dataContext;
-        private readonly DbSet<GoodEntry> _set;
 
         public EFGoodEntryRepository(EFDataContext dataContext)
         {
             _dataContext = dataContext;
-            _set = _dataContext.goodEntries;
         }
-        public async Task AddGoodEntry(GoodEntry goodEntry)
+        public void AddGoodEntry(GoodEntry goodEntry)
         {
-            await _dataContext.AddAsync(goodEntry);
+             _dataContext.goodEntries.AddAsync(goodEntry);
         }
 
         public async Task<IList<GetGoodEntryDto>> GetAllGoodEntry()
@@ -37,5 +35,6 @@ namespace SuperMarket.Persistence.EF.GoodEntries
 
             return await query.ToListAsync();
         }
+
     }
 }

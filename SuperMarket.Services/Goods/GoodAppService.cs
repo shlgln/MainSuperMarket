@@ -34,9 +34,9 @@ namespace SuperMarket.Services.Goods
                 Price = dto.Price
             };
 
-            await _repository.AddGood(good);
+             _repository.AddGood(good);
  
-            await _unitOfWork.Complete();
+            _unitOfWork.Complete();
 
         }
         public bool IsGoodCode(string code)
@@ -70,7 +70,7 @@ namespace SuperMarket.Services.Goods
             good.Price = dto.Price;
             good.CategoryId = dto.CategoryId;
 
-            await _unitOfWork.Complete();
+             _unitOfWork.Complete();
         }
 
         public async Task<Good> ShowGoodInfo(int id)

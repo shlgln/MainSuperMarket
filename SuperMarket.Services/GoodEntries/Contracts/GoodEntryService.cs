@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuperMarket.Services.GoodEntries.Contracts
 {
-    public interface GoodEntryService: Service
+    public interface GoodEntryService
     {
         Task AddGoodEntry(AddGoodEntryDto dto);
         Task<IList<GetGoodEntryDto>> GetAllGoodEntry();

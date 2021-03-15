@@ -8,6 +8,6 @@ namespace SuperMarket.Infrastructure.Application
         void CommitPartial();
         void Commit();
         void Rollback();
-        Task Complete();
+        void Complete();
     }
 }

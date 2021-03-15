@@ -36,8 +36,8 @@ namespace SuperMarket.Services.GoodEntries
                 GoodCode = dto.GoodCode
             };
             good.Count += dto.GoodCount;
-           await _repository.AddGoodEntry(goodEntry);
-           await _unitOfWork.Complete();
+            _repository.AddGoodEntry(goodEntry);
+            _unitOfWork.Complete();
         }
 
         public async Task<IList<GetGoodEntryDto>> GetAllGoodEntry()

@@ -11,16 +11,15 @@ namespace SuperMarket.Persistence.EF.GoodCategories
 {
     public class EFGoodCategoryRepository : GoodCategoryRepository
     {
+
         private readonly EFDataContext _dataContext;
-        private readonly DbSet<GoodCategory> _set;
         public EFGoodCategoryRepository(EFDataContext dataContext)
         {
             _dataContext = dataContext;
-            _set = _dataContext.GoodCategories;
         }
-        public async Task AddGoodCategory(GoodCategory goodCategory)
+        public void AddGoodCategory(GoodCategory goodCategory)
         {
-            await _dataContext.AddAsync(goodCategory);
+             _dataContext.GoodCategories.AddAsync(goodCategory);
         }
         public bool GoodCaterotyDublicate(string Title)
         {
@@ -38,11 +37,9 @@ namespace SuperMarket.Persistence.EF.GoodCategories
                         };
             return await query.ToListAsync();
         }
-        public async Task DeleteGoodCategory(int id)
+        public void DeleteGoodCategory(GoodCategory cat)
         {
-            var goodCategory = await GetCategory(id);
-
-             _dataContext.GoodCategories.Remove(goodCategory);
+            _dataContext.GoodCategories.Remove(cat);
         }
         public async Task<GoodCategory> GetCategory(int id)
         {

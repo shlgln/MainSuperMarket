@@ -9,7 +9,7 @@ namespace SuperMarket.Services.GoodEntries.Contracts
 {
     public interface GoodEntryRepository: Repository
     {
-        Task AddGoodEntry(GoodEntry goodEntry);
+        void AddGoodEntry(GoodEntry goodEntry);
         Task<IList<GetGoodEntryDto>> GetAllGoodEntry();
     }
 }

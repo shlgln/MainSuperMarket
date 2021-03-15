@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuperMarket.Services.SalesFactors.Contracts
 {
-    public interface SaleFactorService: Service
+    public interface SaleFactorService
     {
         Task AddSaleFactor(AddSalesFactorDto dto);
 

@@ -34,9 +34,9 @@ namespace SuperMarket.Persistence.EF
             _dataContext.Database.RollbackTransaction();
         }
 
-        public async Task Complete()
+        public void Complete()
         {
-            await _dataContext.SaveChangesAsync();
+             _dataContext.SaveChangesAsync();
         }
 
     }

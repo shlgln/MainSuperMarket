@@ -9,9 +9,9 @@ namespace SuperMarket.Services.GoodCategories.Contracts
 {
     public interface GoodCategoryRepository: Repository
     {
-        Task AddGoodCategory(GoodCategory goodCategory);
+        void AddGoodCategory(GoodCategory goodCategory);
         Task<IList<GetGoodCategoryDto>> GetAllGategories();
-        Task DeleteGoodCategory(int id);
+        void DeleteGoodCategory(GoodCategory goodCategory);
         bool GoodCaterotyDublicate(string Title);
         Task<GoodCategory> GetCategory(int id);
     }

@@ -10,15 +10,13 @@ namespace SuperMarket.Persistence.EF.SalesFactors
     public class EFSaleFactorRepository : SaleFactorRepository
     {
         private readonly EFDataContext _dataContext;
-        private readonly DbSet<SaleFactors> _set;
         public EFSaleFactorRepository(EFDataContext dataContext)
         {
             _dataContext = dataContext;
-            _set = _dataContext.SaleFactors;
         }
-        public async Task AddSaleFactor(SaleFactors salesFactors)
+        public void AddSaleFactor(SaleFactors salesFactors)
         {
-            await _dataContext.AddAsync(salesFactors);
+             _dataContext.SaleFactors.AddAsync(salesFactors);
         }
 
         public async Task<IList<GetSalesFactorDto>> GetAllSaleFactors()

@@ -9,7 +9,7 @@ namespace SuperMarket.Services.Goods.Contracts
 {
     public interface GoodRepository:Repository
     {
-        Task AddGood(Good good);
+        void AddGood(Good good);
         Task<IList<GetGoodDto>> GetAllGoods();
         bool IsGoodsExistsByCode(string code);
         Task<Good> GetGoodByCode(string code);

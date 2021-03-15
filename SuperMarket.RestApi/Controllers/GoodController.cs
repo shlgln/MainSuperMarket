@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SuperMarket.RestApi.Controllers
 {
-    [Route("api/good")]
+    [Route("api/goods")]
     [ApiController]
     public class GoodController : ControllerBase
     {

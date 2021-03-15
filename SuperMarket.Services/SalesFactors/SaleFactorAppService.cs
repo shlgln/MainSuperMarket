@@ -39,9 +39,10 @@ namespace SuperMarket.Services.SalesFactors
             };
             good.Count -= dto.GoodCount;
 
-            await _repository.AddSaleFactor(salesFactor);
+             _repository.AddSaleFactor(salesFactor);
 
-            await _unitOfWork.Complete();
+            
+            _unitOfWork.Complete();
         }
          
         public async Task<IList<GetSalesFactorDto>> GetAllSaleFactors()

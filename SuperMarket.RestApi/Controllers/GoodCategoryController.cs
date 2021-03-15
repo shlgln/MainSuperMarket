@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SuperMarket.RestApi.Controllers
 {
-    [Route("api/good-category")]
+    [Route("api/good-categories")]
     [ApiController]
     public class GoodCategoryController : ControllerBase
     {
@@ -19,7 +19,7 @@ namespace SuperMarket.RestApi.Controllers
         }
 
         [HttpPost]
-        public async void AddGoodCategory(string title)
+        public async Task AddGoodCategory([FromBody]string title)
         {
             await _service.AddGoodCategory(title);
         }
@@ -32,13 +32,13 @@ namespace SuperMarket.RestApi.Controllers
         }
 
         [HttpDelete]
-        public async void DeleteGoodCategory(int id)
+        public async Task DeleteGoodCategory(int id)
         {
            await _service.DeleteGoodCategory(id);
         }
 
         [HttpPut]
-        public async void EditGoodCategoryInfo(int id, UpdateGoodCategoryDto dto)
+        public async Task EditGoodCategoryInfo(int id, UpdateGoodCategoryDto dto)
         {
             await _service.UpdateGoodCategory(id, dto);
         }

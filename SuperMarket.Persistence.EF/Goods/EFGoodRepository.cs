@@ -10,17 +10,15 @@ namespace SuperMarket.Persistence.EF.Goods
     public class EFGoodRepository : GoodRepository
     {
         private readonly EFDataContext _dataContext;
-        private readonly DbSet<Good> _set;
 
         public EFGoodRepository(EFDataContext dataContext)
         {
             _dataContext = dataContext;
-            _set = _dataContext.Goods;
         }
 
-        public async Task AddGood(Good good)
+        public void AddGood(Good good)
         {
-            await _dataContext.AddAsync(good);
+             _dataContext.Goods.AddAsync(good);
         }
 
         public async Task<IList<GetGoodDto>> GetAllGoods()
